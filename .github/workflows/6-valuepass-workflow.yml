@@ -1,0 +1,33 @@
+name: Value Pass Workflow
+
+on: 
+  workflow_dispatch:
+    inputs:
+        name:
+            description: "Enter your name : "
+            required: true
+            default: "Unnamed"
+
+jobs:
+  get-value-workflow-job:
+    runs-on: ubuntu-latest
+    outputs:
+        greeting_message: ${{ steps.generate-message.outputs.message}}
+
+    steps:
+    - name: Generate Greetings Message
+      id: generate-message
+      run: |
+        echo "message=Hello, ${{ github.event.inputs.name}}" >> $GITHUB_OUTPUT
+        
+
+  print-value-workflow-job:
+    runs-on: ubuntu-latest
+    needs: [get-value-workflow-job]
+
+    steps:
+    - name: Print Greeting Message
+      run: |
+        echo "${{ needs.get-value-workflow-job.outputs.greeting_message}}"
+
+  
