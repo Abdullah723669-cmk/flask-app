@@ -1,0 +1,14 @@
+name: First Workflow
+
+on: [push]
+
+jobs:
+  first-Workflow:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: First step
+      run: |
+        echo "Hello From Mamun's Tutorial"
+        echo "Welcome to Github Action Class"
+    
