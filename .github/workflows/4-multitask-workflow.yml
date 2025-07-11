@@ -1,0 +1,26 @@
+name: Multi Workflow
+
+on: 
+  push:
+    branches:
+      - mamunBranch
+
+jobs:
+  Multi-Workflow-1:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: First step
+      run: |
+        echo "Hello From Mamun's Tutorial"
+        
+
+  Multi-Workflow-2:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Second step
+      run: |
+        echo "Hello From Bobi's Tutorial"
+        
+    
