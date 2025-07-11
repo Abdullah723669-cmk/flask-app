@@ -1,6 +1,9 @@
 name: First Workflow
 
-on: [push]
+on: 
+  push:
+    branches:
+      - mamunBranch
 
 jobs:
   first-Workflow:

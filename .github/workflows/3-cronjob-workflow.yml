@@ -1,0 +1,16 @@
+name: Cron Workflow
+
+on: 
+  schedule:
+    - cron: '*/5 * * * *' # Runs in every 5 minitues"
+
+jobs:
+  cron-Workflow:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Cron step
+      run: |
+        echo "Hello From Mamun's Tutorial"
+        echo "Welcome to Github Action Class ,, this is cron workflow"
+    
