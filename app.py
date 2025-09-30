@@ -7,8 +7,9 @@ def hello():
     <html>
         <head><title>My App</title></head>
         <body>
-            <h1 style="color:red; background-color:green; text-align:center">Hello, Abdullah!</h1>
-            <p>This HTML is written directly in Python!</p>
+            <h1 style="color:red; background-color:green; text-align:center">Hello from Abdullah Al Mamun!</h1>
+            <p>This HTML is written directly in Python Flask!</p>
+            <h3 style="color:green; background-color:red; text-align:center>Good-bye</h3>
         </body>
     </html>
     """
