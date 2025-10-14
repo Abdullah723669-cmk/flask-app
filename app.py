@@ -95,7 +95,7 @@ def hello():
      
          <section>
            <h2>Contact</h2>
-           <p>Email: <a href="mailto:mamun.renta52@email.com">mamun.renata52@email.com</a></p>
+           <p>Email: <a href="mailto:mamun.renta52@gmail.com">mamun.renata52@gmail.com</a></p>
            <p>GitHub: <a href="https://github.com/Abdullah723669-cmk" target="_blank">github.com/Abdullah723669-cmk</a></p>
            <p>LinkedIn: <a href="https://linkedin.com/in/md-abdullah-al-mamun-05a-09b-74c/" target="_blank">linkedin.com/in/md-abdullah-al-mamun-05a-09b-74c/</a></p>
          </section>
